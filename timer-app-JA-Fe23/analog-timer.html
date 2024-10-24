@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analog Timer</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Länka Anime.js -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Analog Timer</h1>
+      <!-- Länkar att navigera mellan vyerna -->
+      <div class="navigation">
+        <span class="nav-link" id="to-digital">Digital Timer</span>
+      </div>
+      <div class="clock-face">
+        <div class="hand minute-hand"></div>
+        <div class="hand second-hand"></div>
+      </div>
+      <div id="minute-counter">Minutes: 0</div>
+      <button id="cancel-timer-btn">Reset Timer</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
