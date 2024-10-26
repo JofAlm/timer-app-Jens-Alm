@@ -66,15 +66,23 @@ html {
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.5s;
+  transform: scale(0); /* Startar loggan som mycket liten */
+  opacity: 0; /* Osynlig från början */
+  text-align: center;
+  margin-top: 50px;
 }
 
 .logo:hover {
   transform: scale(1.1);
 }
 
+/* Stil för slogan */
 .slogan {
-  font-size: 18px;
-  margin-top: 10px;
+  font-size: 24px;
+  transform: scale(0); /* Startar sloganen som mycket liten */
+  opacity: 0; /* Osynlig från början */
+  text-align: center;
+  margin-top: 20px;
   color: #373737;
 }
 
@@ -93,18 +101,21 @@ html {
   gap: 20px;
 }
 
-button {
+/* Grundläggande stil för knappar */
+.button {
   padding: 10px 20px;
-  background-color: #000000;
-  color: white;
+  font-size: 16px;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  transition: transform 0.2s; /* Smidig övergång vid skalning */
+  background-color: #000000; /* Svart bakgrundsfärg */
+  color: white;
   border-radius: 5px;
 }
 
-button:hover {
-  background-color: #5f5f5f;
+/* Färgändring vid hover */
+.button:hover {
+  background-color: #414141;
 }
 
 /* Stil för räkneindikator */
@@ -140,20 +151,25 @@ button:hover {
   margin-top: 100px;
 }
 
-.alarm-container h1 {
+/* Stil för rubriken som ska skaka */
+.alarm-header {
   font-size: 48px;
   color: #2d2929;
+  opacity: 0; /* Startar osynlig för att animera in */
 }
 
-.alarm-container p {
+/* Stil för det övriga innehållet */
+.alarm-content {
   font-size: 18px;
   margin-bottom: 20px;
+  opacity: 0; /* Startar osynlig och visas efter animationen */
 }
 
+/* Stil för knappen i alarmvyn */
 #back-to-set-timer-btn {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: hsl(0, 0%, 0%);
+  background-color: #000000;
   color: white;
   border: none;
   cursor: pointer;
@@ -161,5 +177,5 @@ button:hover {
 }
 
 #back-to-set-timer-btn:hover {
-  background-color: #5f5f5f;
+  background-color: #414141;
 }
